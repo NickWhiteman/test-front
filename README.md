@@ -30,7 +30,6 @@ npm install
 
 > Примечание: В этом репозитории есть два демонстрационных скрипта, которые не привязаны к npm-скриптам по умолчанию:
 
-- `demo-run.ts` — лёгкий демон с mock-каналами (не использует сеть).
 - `demo-integration.ts` — интеграционный демон, поднимает локальные HTTP и WebSocket серверы и проверяет работу реальных `HttpChannel` и `WebSocketChannel`.
 
 ## Запуск тестов
@@ -48,7 +47,7 @@ npm test
 Интеграционный демон (локальные HTTP + WebSocket серверы):
 
 ```bash
-npx ts-node demo-integration.ts
+npm run dev
 ```
 
 Этот скрипт поднимает локальный HTTP-сервер (порт 3005) и WebSocket-сервер (порт 3006), инициализирует `HttpChannel` и `WebSocketChannel`, делает health-check, отправляет запросы и демонстрирует передачу сообщений и работу `ConnectionService`.
