@@ -62,6 +62,6 @@ src/
 	managers/        # ChannelManager, HealthManager
 	services/        # ConnectionService
 	utils/           # buffer, eventEmitter, logger
-tests/             # unit и интеграционные тесты
+tests/             # unit тесты
 demo-integration.ts# интеграционный демон с локальными серверами
 ```
